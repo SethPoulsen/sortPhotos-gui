@@ -1,0 +1,15 @@
+.toolbarRow {
+    width: 100%;
+}
+
+#inputFolder {
+    width: 100%;
+}
+
+#outputFolder {
+    width: 100%;
+}
+
+#goButton {
+    float: right;
+}

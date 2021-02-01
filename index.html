@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <head>
+        <meta charset="UTF-8">
+        <title>Sort Photos</title>
+    </head>
+    <link href="index.css" rel="stylesheet">
+    <body>
+        
+        Input Folder: <button id="inputSelectButton">select folder</button>
+        <div class="toolbarRow"><input id="inputFolder" type="text"></input></div>
+        <br/>
 
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
-  </body>
+        Output Folder: <button id="outputSelectButton">select folder</button>
+        <div class="toolbarRow"><input id="outputFolder" type="text"></input></div>
+        <br/> 
+
+        <div class="toolbarRow"><input id="copyCheckBox" type="checkbox" checked=true> copy (check to copy files, uncheck to move files)</input></div>
+        <br/>
+        <div class="toolbarRow"><button id="goButton"> Go! </button></div>
+
+        <script>
+            // You can also require other files to run in this process
+            require('./renderer.js')
+        </script>
+    </body>
 </html>
